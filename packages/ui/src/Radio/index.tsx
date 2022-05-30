@@ -57,4 +57,5 @@ interface RadioProps {
   options: Option[];
   className?: string;
   disabled?: boolean;
+  children?: any;
 }
