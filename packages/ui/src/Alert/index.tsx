@@ -16,6 +16,7 @@ interface AlertProps {
   accent?: Status;
   outline?: Status;
   closable?: boolean;
+  children?: any;
   onClose?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 

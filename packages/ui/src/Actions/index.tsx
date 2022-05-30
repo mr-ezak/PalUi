@@ -17,6 +17,7 @@ export interface ActionType {
   content?: any;
   disabled?: boolean;
   badge?: BadgeType;
+  children?: any;
 }
 
 interface ActionsProps {

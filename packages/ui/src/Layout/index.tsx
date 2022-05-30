@@ -17,7 +17,7 @@ import {
 import LayoutContext from './layout-context';
 import { Icons } from '@paljs/icons';
 
-const LayoutHeader: React.FC<{ fixed?: boolean; className?: string }> = (props) => {
+const LayoutHeader: React.FC<{ fixed?: boolean; className?: string; children?: any }> = (props) => {
   const className = props.className ? props.className.split(' ') : [];
   props.fixed && className.push('fixed');
   return (
@@ -43,6 +43,7 @@ interface LayoutProps {
   windowMode?: boolean;
   withSubHeader?: boolean;
   evaIcons?: Icons;
+  children?: any;
 }
 
 const Layout: React.FC<LayoutProps> = (props) => {

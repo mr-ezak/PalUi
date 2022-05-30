@@ -52,6 +52,7 @@ interface ContextMenuProps {
   currentPath: string;
   style?: React.CSSProperties;
   className?: string;
+  children?: any;
 }
 
 export default ContextMenu;

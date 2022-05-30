@@ -10,9 +10,10 @@ import { Icon } from '../Icon';
 
 interface FlipCardProps {
   className?: string;
-  style?: object;
+  style?: any;
   button?: 'top' | 'bottom';
   flipped?: boolean;
+  children?: any;
 }
 
 const FlipCardStyled = styled.div<FlipCardProps>`

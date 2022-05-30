@@ -16,6 +16,7 @@ export interface IconProps {
   status?: Status;
   className?: string;
   options?: EvaIconOptions;
+  children?: any;
 }
 
 export const Icon: React.FC<Omit<IconProps, 'name'> & { name: keyof typeof defaultIcons }> = (props) => {

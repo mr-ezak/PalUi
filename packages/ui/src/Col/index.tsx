@@ -67,6 +67,7 @@ interface ColProps {
   breakPoint?: Partial<Record<BreakPointKeys, number | boolean>>;
   style?: React.CSSProperties;
   className?: string;
+  children?: any;
 }
 
 const Col: React.FC<ColProps> = (props) => <ColStyle {...props}>{props.children}</ColStyle>;

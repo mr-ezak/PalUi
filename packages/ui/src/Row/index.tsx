@@ -80,6 +80,7 @@ interface RowProps extends Partial<Record<FlexProps, BreakPointKeys>> {
   reverse?: boolean;
   style?: React.CSSProperties;
   className?: string;
+  children?: any;
 }
 
 const Row: React.FC<RowProps> = (props) => <RowStyle {...props}>{props.children}</RowStyle>;

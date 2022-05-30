@@ -28,7 +28,7 @@ const ContainerStyle = styled.div`
   `}
   ${width}
 `;
-const Container: React.FC<{ fluid?: boolean }> = (props) => (
+const Container: React.FC<{ fluid?: boolean; children?: any }> = (props) => (
   <ContainerStyle {...props}>{props.children}</ContainerStyle>
 );
 

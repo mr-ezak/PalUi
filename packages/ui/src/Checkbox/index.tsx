@@ -16,6 +16,7 @@ export interface CheckboxStyleProps {
   style?: React.CSSProperties;
   status?: Status;
   indeterminate?: boolean;
+  children?: any;
 }
 
 export interface CheckboxProps extends CheckboxStyleProps {

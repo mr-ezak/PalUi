@@ -47,6 +47,7 @@ Badge.defaultProps = {
 interface BadgeProps {
   position: Position;
   status: Status;
+  children?: any;
 }
 
 export default Badge;

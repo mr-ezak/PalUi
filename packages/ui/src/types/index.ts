@@ -10,6 +10,7 @@ export interface Badge {
   status: Status;
   title: string;
   position: Position;
+  children?: any;
 }
 
 export type Position =
@@ -58,6 +59,7 @@ export interface ButtonTypes {
   size?: Size;
   shape?: Shape;
   status?: Status;
+  children?: any;
 }
 
 type RequireOnlyOne<T, Keys extends keyof T = keyof T> = Pick<T, Exclude<keyof T, Keys>> &
